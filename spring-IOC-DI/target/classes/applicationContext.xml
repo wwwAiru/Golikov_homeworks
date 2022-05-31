@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="converter"
+          class="spring.core.CurrencyConverter">
+        <property name="balance" value="1000000"/>
+    </bean>
+
+    <bean id="usd"
+          class="spring.core.USD">
+        <property name="rate" value="61.3d"/>
+    </bean>
+
+    <bean id="eur"
+          class="spring.core.EUR">
+        <property name="rate" value="67.5d"/>
+    </bean>
+
+    <bean id="cny"
+          class="spring.core.CNY">
+        <property name="rate" value="9.5d"/>
+    </bean>
+
+</beans>
