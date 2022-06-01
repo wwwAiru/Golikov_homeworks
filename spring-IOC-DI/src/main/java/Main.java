@@ -11,6 +11,7 @@ public class Main {
         USD usd = context.getBean("usd", USD.class);
         EUR eur = context.getBean("eur", EUR.class);
         CNY cny = context.getBean("cny", CNY.class);
+        context.close();
         converter.addCurrencyToList(usd);
         converter.addCurrencyToList(eur);
         converter.addCurrencyToList(cny);
